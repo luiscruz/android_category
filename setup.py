@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="android_category",
-    version="0.0.3",
+    version="0.0.4",
     author="Luis Cruz",
     author_email="luismirandacruz@gmail.com",
     description="Tool to retrieve the category of an app given a url to the source code (git/local).",

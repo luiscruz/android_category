@@ -53,8 +53,11 @@ def get_category(package):
     return category
 
 def _get_category_from_gplay(package):
-    app_entry = AppEntry(package)
-    return app_entry.get_category()
+    try:
+        app_entry = AppEntry(package)
+        return app_entry.get_category()
+    except:
+        return None
 
 def _get_category_from_fdroid(package):
     file_in = "./fdroid.xml"
@@ -74,5 +77,6 @@ def _get_category_from_fdroid(package):
                 app_id = element.find("id").text
                 if app_id == package:
                     return element.find("category").text
+    return None
     
     
