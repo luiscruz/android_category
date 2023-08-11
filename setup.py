@@ -15,7 +15,7 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         "Click==7.0",
-        "GitPython==2.1.11",
+        "GitPython==3.1.32",
         "google_play_reader>=0.0.1.dev16",
     ],
     classifiers=[
